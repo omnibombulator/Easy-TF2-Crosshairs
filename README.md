@@ -21,33 +21,44 @@ Locate the following files: **resource/clientscheme.res**, **scripts/hudlayout.r
 You're most likely not going to have hudanimations_manifest.txt, so if you don't, I've included a copy of it in this download. You can find it in the scripts folder, and you can copy and paste it straight into your HUD.
 
 Now, add the following at the very top of **resource/clientscheme.res**, before anything else.
-```// Crosshairs
+
+```
+// Crosshairs
 #base "crosshairs/fog/crosshairscheme.res"
-#base "crosshairs/knuckles/crosshairscheme.res"```
+#base "crosshairs/knuckles/crosshairscheme.res"
+```
 
 Next, add the following at very top of **scripts/hudlayout.res**, again, before anything else.
-```// Fog's Crosshairs
-#base "../resource/crosshairs/fog/crosshair.res"
+```
+// Fog's Crosshairs
+//#base "../resource/crosshairs/fog/crosshair.res"
 //#base "../resource/crosshairs/fog/crosshair-blur.res"
 //#base "../resource/crosshairs/fog/crosshair-outline.res"
 
 // Knuckles' Crosshairs
 //#base "../resource/crosshairs/knuckles/crosshair.res"
 //#base "../resource/crosshairs/knuckles/crosshair-blur.res"
-//#base "../resource/crosshairs/knuckles/crosshair-outline.res"```
+//#base "../resource/crosshairs/knuckles/crosshair-outline.res"
+```
 
 If you had your own **scripts/hudanimations_manifest.txt** file in your Custom HUD, add the following.
-```"file"		"resource/crosshairs/crosshair_animations.txt"```
+```
+"file"		"resource/crosshairs/crosshair_animations.txt"
+```
 Specifically, you need to add this after the following line.
-```"file"		"scripts/hudanimations.txt"```
+```
+"file"		"scripts/hudanimations.txt"
+```
 You should end up with a file looking like this.
-```hudanimations_manifest
+```
+hudanimations_manifest
 {
 
 	"file"		"scripts/hudanimations.txt"
 	"file"		"resource/crosshairs/crosshair_animations.txt"
 	"file"		"scripts/hudanimations_tf.txt"
-}```
+}
+```
 
 **Fantastic**, we're done setting up our files. If you've followed this guide correctly so far, everything should be set in place and ready to go. Next step:
 
@@ -64,7 +75,8 @@ You may think "This crosshair isn't the one I want", "It's way too big", "I don'
 
 Go back to the **crosshairs** folder and locate the file you've uncommented for use. Open it up and you'll be greeted with a fairly easy to follow chunk of code in your text editor.
 For the sake of example, let's look at **crosshairs/fog/crosshair.res**
-```"Resource/HudLayout.res"
+```
+"Resource/HudLayout.res"
 {
 	FogCrosshair
 	{
@@ -93,7 +105,8 @@ For the sake of example, let's look at **crosshairs/fog/crosshair.res**
 		"textAlignment"	"center"
 		"fgcolor"		"FogDefault"
 	}
-}```
+}
+```
 There are **5 key values** here that have been separated, and for good reason. These are what you'll be needed to pay attention to in order to change your Crosshair's Positioning and what Crosshair you want to use (size and colors will be covered shortly).
 
 **Crosshair Value** is what Crosshair will be displayed on screen while you play. You can match the corresponding value to a crosshair using the **crosshair-preview.png** image file included in the folder.
@@ -102,7 +115,8 @@ There are **5 key values** here that have been separated, and for good reason. T
 
 To change the size and color of the Crosshair, you'll need to open the **crosshairscheme.res** file included within the same folder as the one your desired Crosshair is found. This is probably the most daunting part, but no worries, it's just as easy as the rest.
 Opening the file will display different values for a small variety of different things. Let's look at font sizes first, and use the default Fog Crosshair as an example:
-```"FogCross"
+```
+		"FogCross"
 		{
 			"1"
 			{
@@ -111,16 +125,19 @@ Opening the file will display different values for a small variety of different 
 				"weight"	"0"
 				"antialias"	"1"
 			}
-		}```
+		}
+		```
 The only thing we're interested in here is the **tall** value. Change the numberical value to anything else of your choosing.
 The same can be done with **"FogCrossOutline"** and **"FogCrossBlur"**, as well as the similarly named values in the Knuckles' Crosshair folder.
 Unfortunately, a restart is required to see changes in this file. A good size for most Crosshairs is usually between 24 and 28.
 
 While we're in this file, we can also change the colors of the crosshair.
-```"FogDefault"		"240 240 240 255"
+```
+		"FogDefault"		"240 240 240 255"
 		"FogShadow"			"18 18 18 255"
 		"FogDamage"			"244 67 54 255"
-		"FogDamageShadow"	"18 18 18 255"```
+		"FogDamageShadow"	"18 18 18 255"
+```
 **FogDefault** is the standard color for the Crosshair. This affects the Standard Crosshair and the Outline Crosshair.
 **FogShadow** is the standard color for the Blurred Crosshair.
 **FogDamage** is the color that the Crosshair will change to when you have inflicted damage onto an enemy player. This affects the Standard Crosshair and the Outline Crosshair.
