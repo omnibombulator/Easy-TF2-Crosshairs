@@ -107,6 +107,7 @@ For the sake of example, let's look at **crosshairs/fog/crosshair.res**
 	}
 }
 ```
+
 There are **5 key values** here that have been separated, and for good reason. These are what you'll be needed to pay attention to in order to change your Crosshair's Positioning and what Crosshair you want to use (size and colors will be covered shortly).
 
 **Crosshair Value** is what Crosshair will be displayed on screen while you play. You can match the corresponding value to a crosshair using the **crosshair-preview.png** image file included in the folder.
@@ -115,6 +116,7 @@ There are **5 key values** here that have been separated, and for good reason. T
 
 To change the size and color of the Crosshair, you'll need to open the **crosshairscheme.res** file included within the same folder as the one your desired Crosshair is found. This is probably the most daunting part, but no worries, it's just as easy as the rest.
 Opening the file will display different values for a small variety of different things. Let's look at font sizes first, and use the default Fog Crosshair as an example:
+
 ```
 		"FogCross"
 		{
@@ -126,7 +128,8 @@ Opening the file will display different values for a small variety of different 
 				"antialias"	"1"
 			}
 		}
-		```
+```
+
 The only thing we're interested in here is the **tall** value. Change the numberical value to anything else of your choosing.
 The same can be done with **"FogCrossOutline"** and **"FogCrossBlur"**, as well as the similarly named values in the Knuckles' Crosshair folder.
 Unfortunately, a restart is required to see changes in this file. A good size for most Crosshairs is usually between 24 and 28.
