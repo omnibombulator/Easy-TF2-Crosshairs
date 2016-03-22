@@ -155,7 +155,7 @@ While we're in this file, we can also change the colors of the crosshair.
 **FogDamageShadow** is the color that the Blurred Crosshair will change to when you have inflicted damage onto an enemy player.
 Knuckles' Crosshairs have very similarly named values that mirror the same results.
 
-Again, a restart is required to see changes in this file. Use the <a href="https://color.adobe.com/create/color-wheel/" title="Adobe Color Wheel">Adobe Color Wheel</a> to find a good color for you, then copy the RGB code value and replace the ones set in this file and replace them with what you want to use.
+Again, a restart is required to see changes in this file. Use the <a href="https://color.adobe.com/create/color-wheel/" title="Adobe Color Wheel">Adobe Color Wheel</a> to find a good color for you, then copy the RGB code value and replace the ones set in this file and replace them with what you want to use. Be sure not to forget the Alpha value at the end. You should always have 4 numberical values in your color codes. Red, Green, Blue and Alpha (transparency).
 
 ## Step 4:
 You should be completely set up to video games with your brand new Crosshair. Congratulations. That was way easier than trying to figure out where a shit ton of code goes yourself.
