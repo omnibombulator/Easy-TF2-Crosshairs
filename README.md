@@ -64,9 +64,13 @@ hudanimations_manifest
 
 ## Step 3:
 Go back into your **scripts/hudlayout.res** file again, and remove a comment tag (these // things) from one of the files of your choosing.
+
 **crosshair.res** is a plain colored crosshair. Nothing special.
+
 **crosshair-blur.res** is a blurred out crosshair. It is best used as a shadow behind the standard crosshair.
+
 **crosshair-outline.res** is a crosshair with a black outline around it by default.
+
 It's wise to only remove a section from either crosshair, unless you feel like mixing Fog's and Knuckles' crosshairs together. At this point, it's your call.
 
 If you're in game at this point, do a hud_reloadscheme in console and see if the Crosshair appears. If it does, brilliant, you're still on the right track. If not, get back to reading what I have previously written and follow it properly.
@@ -131,6 +135,7 @@ Opening the file will display different values for a small variety of different 
 ```
 
 The only thing we're interested in here is the **tall** value. Change the numberical value to anything else of your choosing.
+
 The same can be done with **"FogCrossOutline"** and **"FogCrossBlur"**, as well as the similarly named values in the Knuckles' Crosshair folder.
 Unfortunately, a restart is required to see changes in this file. A good size for most Crosshairs is usually between 24 and 28.
 
@@ -142,10 +147,14 @@ While we're in this file, we can also change the colors of the crosshair.
 		"FogDamageShadow"	"18 18 18 255"
 ```
 **FogDefault** is the standard color for the Crosshair. This affects the Standard Crosshair and the Outline Crosshair.
+
 **FogShadow** is the standard color for the Blurred Crosshair.
+
 **FogDamage** is the color that the Crosshair will change to when you have inflicted damage onto an enemy player. This affects the Standard Crosshair and the Outline Crosshair.
+
 **FogDamageShadow** is the color that the Blurred Crosshair will change to when you have inflicted damage onto an enemy player.
 Knuckles' Crosshairs have very similarly named values that mirror the same results.
+
 Again, a restart is required to see changes in this file. Use the <a href="https://color.adobe.com/create/color-wheel/" title="Adobe Color Wheel">Adobe Color Wheel</a> to find a good color for you, then copy the RGB code value and replace the ones set in this file and replace them with what you want to use.
 
 ## Step 4:
