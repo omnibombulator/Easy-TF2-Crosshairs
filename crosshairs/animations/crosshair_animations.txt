@@ -1,0 +1,45 @@
+event DamagedPlayer
+{
+	// Broesel Animations
+	Animate BroeselCrosshair FgColor "BroeselDamage" Linear 0.0 0.0
+	Animate BroeselCrosshair FgColor "BroeselDefault" Linear 0.15 0.0
+	
+	Animate BroeselCrosshairBlur FgColor "BroeselDamageShadow" Linear 0.0 0.0
+	Animate BroeselCrosshairBlur FgColor "BroeselShadow" Linear 0.15 0.0
+	
+	/////////////////////////////////////////////////////////////////////////
+	
+	// Fog Animations
+	Animate FogCrosshair FgColor "FogDamage" Linear 0.0 0.0
+	Animate FogCrosshair FgColor "FogDefault" Linear 0.15 0.0
+	
+	Animate FogCrosshairBlur FgColor "FogDamageShadow" Linear 0.0 0.0
+	Animate FogCrosshairBlur FgColor "FogShadow" Linear 0.15 0.0
+	
+	/////////////////////////////////////////////////////////////////////////
+	
+	// Knuckles Animations
+	Animate KnucklesCrosshair FgColor "KnucklesDamage" Linear 0.0 0.0
+	Animate KnucklesCrosshair FgColor "KnucklesDefault" Linear 0.15 0.0
+	
+	Animate KnucklesCrosshairBlur FgColor "KnucklesDamageShadow" Linear 0.0 0.0
+	Animate KnucklesCrosshairBlur FgColor "KnucklesShadow" Linear 0.15 0.0
+	
+	/////////////////////////////////////////////////////////////////////////
+	
+	// Toonhud Animations
+	Animate ToonhudCrosshair FgColor "ToonhudDamage" Linear 0.0 0.0
+	Animate ToonhudCrosshair FgColor "ToonhudDefault" Linear 0.15 0.0
+	
+	Animate ToonhudCrosshairBlur FgColor "ToonhudDamageShadow" Linear 0.0 0.0
+	Animate ToonhudCrosshairBlur FgColor "ToonhudShadow" Linear 0.15 0.0
+	
+	/////////////////////////////////////////////////////////////////////////
+	
+	// Whahay Animations
+	Animate WhahayCrosshair FgColor "WhahayDamage" Linear 0.0 0.0
+	Animate WhahayCrosshair FgColor "WhahayDefault" Linear 0.15 0.0
+	
+	Animate WhahayCrosshairBlur FgColor "WhahayDamageShadow" Linear 0.0 0.0
+	Animate WhahayCrosshairBlur FgColor "WhahayShadow" Linear 0.15 0.0	
+}

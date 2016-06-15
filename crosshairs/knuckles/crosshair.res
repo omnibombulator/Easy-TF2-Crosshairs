@@ -2,6 +2,15 @@
 {
 	KnucklesCrosshair
 	{
+		// Crosshair Value
+		"labelText"		"0"
+		
+		// Crosshair Settings
+		// Crosshair Name, Size:10-40, Outline:On/Off, Blur:On/Off.
+		// Size can be between 10 and 40. Anything higher or lower will not work.
+		// Removing any of the values from below will cause the crosshair to break.
+		"font"			"Knuckles, Size:10, Outline:Off, Blur:Off"
+		
 		// Horizontal Position
 		"xpos"			"c-100"
 		
@@ -14,16 +23,20 @@
 		// Height
 		"tall"			"198"
 		
-		// Crosshair Value
-		"labelText"		"e"
 		
-		// Leave the rest alone
+		
+		
+		
+		
+		
+		
+		
+		// Don't touch me, I'm fragile!
 		"controlName"	"CExLabel"
 		"fieldName"		"KnucklesCrosshair"
 		"visible"		"1"
 		"enabled"		"1"
 		"zpos"			"2"
-		"font"			"KnucklesCross"
 		"textAlignment"	"center"
 		"fgcolor"		"KnucklesDefault"
 	}

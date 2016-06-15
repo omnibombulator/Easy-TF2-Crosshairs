@@ -1,15 +1,15 @@
 "Resource/HudLayout.res"
 {
-	FogCrosshair
+	WhahayCrosshairBlur
 	{
 		// Crosshair Value
-		"labelText"		"0"
+		"labelText"		"a"
 		
 		// Crosshair Settings
-		// Crosshair Name, Size:10-40, Outline:On/Off, Blur:On/Off.
+		// Crosshair Name, Size:10-40, Outline:On/Off, Blur:On/Off
 		// Size can be between 10 and 40. Anything higher or lower will not work.
 		// Removing any of the values from below will cause the crosshair to break.
-		"font"			"Fog, Size:10, Outline:Off, Blur:Off"
+		"font"			"Whahay, Size:10, Outline:Off, Blur:On"
 		
 		// Horizontal Position
 		"xpos"			"c-100"
@@ -33,11 +33,11 @@
 		
 		// Don't touch me, I'm fragile!
 		"controlName"	"CExLabel"
-		"fieldName"		"FogCrosshair"
+		"fieldName"		"WhahayCrosshairBlur"
 		"visible"		"1"
 		"enabled"		"1"
-		"zpos"			"2"
+		"zpos"			"1"
 		"textAlignment"	"center"
-		"fgcolor"		"FogDefault"
+		"fgcolor"		"WhahayShadow"
 	}
 }
