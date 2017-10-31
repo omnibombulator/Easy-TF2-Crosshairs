@@ -1,5 +1,10 @@
-event DamagedPlayer
-{
+event DamagedPlayer {
+	StopEvent	HitMarker	0.0
+	RunEvent	HitMarker	0.01
+}
+	
+event HitMarker {
+	
 	// Broesel Animations
 	Animate BroeselCrosshair FgColor "BroeselDamage" Linear 0.0 0.0
 	Animate BroeselCrosshair FgColor "BroeselDefault" Linear 0.15 0.0
@@ -41,5 +46,6 @@ event DamagedPlayer
 	Animate WhahayCrosshair FgColor "WhahayDefault" Linear 0.15 0.0
 	
 	Animate WhahayCrosshairBlur FgColor "WhahayDamageShadow" Linear 0.0 0.0
-	Animate WhahayCrosshairBlur FgColor "WhahayShadow" Linear 0.15 0.0	
+	Animate WhahayCrosshairBlur FgColor "WhahayShadow" Linear 0.15 0.0
+	
 }
